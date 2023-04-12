@@ -1,0 +1,37 @@
+.nav-container {
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0 20px;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+}
+
+.navbar-button {
+    background-color: rgba(68, 68, 68, 0.7);
+    border: 1px solid rgb(133, 133, 134);
+    color: rgb(160, 160, 160);
+    border-radius: 10px;
+    padding: 15px 20px;
+    flex-shrink: 0;
+    transition: border 0.14s;
+}
+.navbar-button:hover{
+    border: 1px solid rgb(219, 220, 224);
+}
