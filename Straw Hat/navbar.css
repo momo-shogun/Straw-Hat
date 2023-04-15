@@ -10,17 +10,33 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .navbar {
     height: 50px;
+    padding: 0 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     background-color: rgb(68, 68, 68);
     border-radius: 10px;
+}
+.menu-button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    font-weight: 500;
+}
+.menu-icon{
+    cursor: pointer;
+}
+.menu-icon:click{
+    color: red;
 }
 
 .navbar-button {
@@ -34,4 +50,11 @@
 }
 .navbar-button:hover{
     border: 1px solid rgb(219, 220, 224);
+}
+
+/* Media query to hide navbar below 500x800 screen size */
+@media (max-width: 600px){
+    .navbar {
+        display: none;
+    }
 }
